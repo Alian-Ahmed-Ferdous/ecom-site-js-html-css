@@ -1,0 +1,182 @@
+/* Reset some default styles for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #fafafa; /* Light gray background */
+}
+
+header {
+    background-color: #222; /* Dark gray header */
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background-color: #ff7575; /* Pink background for navigation */
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #4da6ff; /* Slightly darker pink on hover */
+}
+
+main {
+    padding: 2rem;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.product-carousel {
+    display: flex;
+}
+
+.product {
+    border: 2px solid #ff7575; /* Pink border */
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px); /* Slight upward lift on hover */
+}
+
+.product img {
+    width: 100%;
+    height: 30rem; /* Fixed height for consistency */
+    object-fit: cover;
+    border-radius: 5px; /* Slightly rounded corners */
+    border: 4px solid #ff7575; /* Pink border around the image */
+    background-color: #fff; /* White background behind the image */
+}
+
+.price {
+    display: block;
+    font-weight: bold;
+    margin: 0.5rem 0;
+    color: #ff7575; /* Pink text for price */
+    font-size: 1.2rem;
+}
+
+button {
+    background-color: #ff7575; /* Pink button background */
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 999px; /* Circular shape */
+    font-size: 1.2rem; /* Larger font size for button */
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4da6ff; /* Slightly darker pink on hover */
+}
+
+/* Center the buttons on the horizontal plane */
+#carousel-wrapper {
+    display: flex;
+    justify-content: space-between; /* Position buttons at either end */
+    align-items: center; /* Center the buttons vertically */
+    position: relative;
+    margin-top: 2rem; /* Add some space between carousel and buttons */
+}
+
+#prev-silde-btn {
+    margin-bottom: 1rem; /* Add some space between the buttons */
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Custom font import for anime aesthetic */
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+/* Apply custom font to specific elements */
+h1, nav a, button {
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.product-info {
+    text-align: left;
+    max-width: 400px; /* Limit the width of product details */
+    margin: 0 auto; /* Center the product details horizontally */
+    padding: 1rem;
+    border: 1px solid #ddd; /* Add border for product details */
+    border-radius: 5px; /* Add rounded corners to product details */
+    background-color: #fff; /* White background for product details */
+}
+
+.category-filter {
+    text-align: left;
+    max-width: 200px; /* Limit the width of category filter */
+    margin-top: 1rem; /* Add space between product details and filter */
+}
+
+.category-filter h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.category-filter ul {
+    list-style: none;
+    padding: 0;
+}
+
+.category-filter li {
+    margin-bottom: 0.5rem;
+}
+
+.category-filter a {
+    text-decoration: none;
+    color: #333;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.category-filter a:hover {
+    background-color: #ff75a0; /* Pink background on hover */
+    color: #fff;
+    border-color: #ff75a0; /* Pink border on hover */
+}

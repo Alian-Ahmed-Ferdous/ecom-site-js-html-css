@@ -1,0 +1,33 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "Product 1",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "price": 19.99,
+        "image": "img/product1.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Product 2",
+        "description": "Vestibulum eu augue nec ligula facilisis commodo.",
+        "price": 29.99,
+        "image": "img/product2.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Product 3",
+        "description": "Etiam eget orci eu purus bibendum auctor.",
+        "price": 14.99,
+        "image": "img/product3.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Product 4",
+        "description": "Nullam convallis nunc vel massa lacinia tincidunt.",
+        "price": 24.99,
+        "image": "img/product4.jpg"
+      }
+    ]
+  }
+  

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple E-commerce Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My E-commerce Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products">
+            <!-- Carousel for displaying products -->
+            <div id="carousel-wrapper">
+                <!-- Buttons for manual navigation -->
+                <button id="prev-silde-btn" class="carousel-btn"><</button>
+                <div class="product-carousel" id="product-carousel">
+                    <!-- Product listing will be dynamically generated here -->
+                </div>
+                <button id="next-silde-btn" class="carousel-btn">></button>
+            </div>
+        </section>
+
+        <section class="product-details">
+            <div class="product-info">
+                <h2 id="product-name">Product Name</h2>
+                <p id="product-description">Product description goes here.</p>
+                <span id="product-price" class="price">$0.00</span>
+                <button id="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="category-filter">
+                <h2>Product Category Filter</h2>
+                <ul>
+                    <li><a href="#">All</a></li>
+                    <li><a href="#">Electronics</a></li>
+                    <li><a href="#">Clothing</a></li>
+                    <li><a href="#">Home &amp; Kitchen</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 My E-commerce Store. All rights reserved.</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
